@@ -20,4 +20,9 @@ public class BoletosTest {
         assertEquals("Pago",b.PagaBoleto());
     }
     
+    @Test
+    public void pago1parcela(){
+        Boletos b = new Boletos();
+        assertEquals("Pago com 1 boleto",b.PagaBoleto(3000,0,0,3000));
+    }
 }
