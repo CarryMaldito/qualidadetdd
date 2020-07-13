@@ -16,7 +16,7 @@ public class BoletosTest {
     
     @Test
     public void Base() {
-        BoletosTest b = new BoletosTest(); 
+        Boletos b = new Boletos(); 
         assertEquals("Pago",b.PagaBoleto());
     }
     
