@@ -17,12 +17,12 @@ public class BoletosTest {
     @Test
     public void Base() {
         Boletos b = new Boletos(); 
-        assertEquals("Pago",b.PagaBoleto());
+        assertEquals("Pago",b.PagaBoleto(3000,0,0,3000));
     }
     
     @Test
     public void pago1parcela(){
         Boletos b = new Boletos();
-        assertEquals("Pago com 1 boleto",b.PagaBoleto(3000,0,0,3000));
+        assertEquals("Pago",b.PagaBoleto(3000,0,0,3000));
     }
 }
