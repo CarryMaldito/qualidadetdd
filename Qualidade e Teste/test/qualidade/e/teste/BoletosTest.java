@@ -25,4 +25,9 @@ public class BoletosTest {
         Boletos b = new Boletos();
         assertEquals("Pago",b.PagaBoleto(3000,0,0,3000));
     }
+    @Test
+    public void nãoPago(){
+        Boletos b = new Boletos();
+        assertEquals("Não pago",b.PagaBoleto(25, 60, 80, 1000));
+    }
 }
