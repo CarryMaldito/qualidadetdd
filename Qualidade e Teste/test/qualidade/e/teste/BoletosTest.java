@@ -45,4 +45,9 @@ public class BoletosTest {
         Boletos b = new Boletos();
         assertEquals("Pagou com 3 boletos",b.quantosBoletosPagou(1000, 1000, 1000, 3000));
     }
+    @Test
+    public void nãoPagouContandoboletos(){
+        Boletos b = new Boletos();
+        assertEquals("Não pagou",b.quantosBoletosPagou(300, 25, 4, 8001)); //É MAIS DE 8 MIL!!!! 
+    }
 }

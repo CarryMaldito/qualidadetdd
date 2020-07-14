@@ -21,8 +21,12 @@ public class Boletos {
         }
         if((p1+p2+p3 >= div1) && ((p1 == 0)|| (p2 == 0 ) || (p3 == 0))){
             return "Pagou com 2 boletos";
-        }else{
+        }
+        if (p1+p2+p3 >= div1 && p1 != 0 && p2 != 0 && p3 != 0){
             return "Pagou com 3 boletos";
+        } else {
+            
+            return "Não pagou";
         }
     }
     
