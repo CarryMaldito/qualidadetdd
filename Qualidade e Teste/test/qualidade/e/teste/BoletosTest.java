@@ -35,4 +35,9 @@ public class BoletosTest {
         Boletos b = new Boletos();
         assertEquals("Pagou com 1 boleto",b.quantosBoletosPagou(1000,0,0,1000));
     }
+    @Test
+    public void pagouCom2Boletos(){
+        Boletos b = new Boletos();
+        assertEquals("Pagou com 2 boletos",b.quantosBoletosPagou(0, 0, 3000, 3000));
+    }
 }
