@@ -12,6 +12,10 @@ public class Boletos {
             return "Pago";
         }
         return "Não pago";
-}
+}   
+    public String quantosBoletosPagou(float p1, float p2, float p3, float div1){
+        
+        return "Pagou com 1 boleto";
+    }
     
 }
