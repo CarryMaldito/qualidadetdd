@@ -15,7 +15,12 @@ public class Boletos {
 }   
     public String quantosBoletosPagou(float p1, float p2, float p3, float div1){
         
-        return "Pagou com 2 boleto";
+        if ((p1+p2+p2 >= div1) && ((p1 + p2 == 0)|| (p2+p3 == 0 ) || (p3+p1 ==0))){
+            
+            return "Pagou com 1 boleto";
+        }else{
+            return "Pagou com 2 boletos";
+        }
     }
     
 }
