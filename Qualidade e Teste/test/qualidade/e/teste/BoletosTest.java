@@ -30,4 +30,9 @@ public class BoletosTest {
         Boletos b = new Boletos();
         assertEquals("Não pago",b.PagaBoleto(25, 60, 80, 1000));
     }
+    @Test
+    public void quantasBoletosPagou(){
+        Boletos b = new Boletos();
+        assertEquals("Pagou com 1 boleto",b.quantosBoletosPagou(1000,0,0,1000));
+    }
 }
