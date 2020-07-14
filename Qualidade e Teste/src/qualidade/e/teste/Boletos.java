@@ -15,7 +15,7 @@ public class Boletos {
 }   
     public String quantosBoletosPagou(float p1, float p2, float p3, float div1){
         
-        return "Pagou com 1 boleto";
+        return "Pagou com 2 boleto";
     }
     
 }
